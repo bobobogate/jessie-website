@@ -1,4 +1,3 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Jessie 陳立得 品牌網站</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="給講師、身心靈工作者、手作人的品牌網站。從品牌訪談、文案到手繪主視覺，一個人陪你走完。桃園，線上服務全台。">
@@ -176,6 +175,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .plan .badge{position:absolute;top:-13px;left:24px;background:var(--apricot);border-radius:var(--radius-tag);padding:3px 14px;font-size:13px;letter-spacing:.12em}
 .plan h4{margin:0;font-weight:400;font-size:18px;letter-spacing:.1em}
 .plan .price{font-family:var(--font-en);font-weight:700;font-size:36px;line-height:1.1;letter-spacing:0;font-variant-numeric:tabular-nums}
+.plan .price.quote{font-family:var(--font-zh);font-weight:400;font-size:22px;letter-spacing:.1em;line-height:1.6;-webkit-text-stroke:.03em currentColor}
+.plan .price-row{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+.plan .was{font-family:var(--font-en);font-weight:400;font-size:17px;color:var(--moss);text-decoration:line-through;text-decoration-color:var(--red);text-decoration-thickness:2px}
+.plan.promo .badge{background:var(--forest);color:var(--rice)}
 .plan .price span{font-size:15px;letter-spacing:.06em;margin-right:4px;color:var(--moss)}
 .plan .spec{font-size:13.5px;letter-spacing:.1em;color:var(--moss);padding-bottom:12px;border-bottom:1px dashed var(--hair)}
 .plan p{font-size:14.5px;color:var(--moss);line-height:1.75}
@@ -390,13 +393,13 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
       <div class="plans two">
         <article class="plan">
           <h4>品牌梳理</h4>
-          <div class="price"><span>NT$</span>12,000</div>
+          <div class="price quote">依需求報價</div>
           <p>問題集＋兩次訪談，交付品牌簡報：定位、客群輪廓、價值與語氣、風格方向、3 句標語。</p>
           <span class="time"><svg viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M7 4v3.2l2 1.4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>約 2–3 週</span>
         </article>
         <article class="plan">
           <h4>品牌梳理＋客群調查</h4>
-          <div class="price"><span>NT$</span>22,000</div>
+          <div class="price quote">依需求報價</div>
           <p>再加上問卷設計、3 場客群訪談與調查分析報告，讓品牌定位有真實客群的聲音當根據。</p>
           <span class="time"><svg viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="5.5" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M7 4v3.2l2 1.4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>約 4–6 週</span>
         </article>
@@ -406,28 +409,29 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
     <div class="group">
       <h3 class="group-title">網站製作</h3>
       <div class="plans four">
-        <article class="plan">
+        <article class="plan promo">
+          <span class="badge">推廣優惠</span>
           <h4>輕量</h4>
-          <div class="price"><span>NT$</span>8,000</div>
+          <div class="price-row"><s class="was" aria-label="原價 NT$8,000">NT$8,000</s><div class="price"><span>NT$</span>5,000</div></div>
           <div class="spec">一頁式・無後台・免月費</div>
           <p>LINE、IG、Email 一鍵聯絡。內容由我代為更新，適合很少更動的人。</p>
         </article>
         <article class="plan">
           <h4>基礎</h4>
-          <div class="price"><span>NT$</span>15,000</div>
+          <div class="price quote">依需求報價</div>
           <div class="spec">Wix 一頁式</div>
           <p>聯絡表單、手機版調整，教你自己從後台改內容。</p>
         </article>
         <article class="plan featured">
           <span class="badge">最多人選</span>
           <h4>標準</h4>
-          <div class="price"><span>NT$</span>28,000</div>
+          <div class="price quote">依需求報價</div>
           <div class="spec">Wix 4–5 頁</div>
           <p>首頁、關於我、服務、作品集、聯絡，含基礎 SEO。</p>
         </article>
         <article class="plan">
           <h4>進階</h4>
-          <div class="price"><span>NT$</span>45,000</div>
+          <div class="price quote">依需求報價</div>
           <div class="spec">Wix 6–8 頁</div>
           <p>再加上部落格、線上預約、常見問題，適合開課與諮詢。</p>
         </article>
@@ -435,7 +439,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
     </div>
 
     <div class="price-note">
-      <p>加購：手繪插畫 NT$3,500／張、文案撰寫 NT$2,500／頁、聯絡表單串接 NT$2,000 等。實際報價依需求另提供報價單。</p>
+      <p>標示「依需求報價」的方案，會在聊過需求後提供報價單。也可以加購手繪插畫、文案撰寫、聯絡表單串接等項目。</p>
       <a class="btn btn-fill" href="#contact">聊聊哪個方案適合我</a>
     </div>
   </div>
@@ -541,5 +545,3 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
   });
 })();
 </script>
-
-</body></html>
