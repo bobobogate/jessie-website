@@ -1,5 +1,9 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Jessie 陳立得 品牌網站</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="給講師、身心靈工作者、手作人的品牌網站。從品牌訪談、文案到手繪主視覺，一個人陪你走完。桃園，線上服務全台。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +35,8 @@
   color-scheme:light;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
+html{scroll-behavior:smooth;scroll-padding-top:84px;overflow-x:hidden}
+.case{overflow:hidden}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 body{margin:0;overflow-x:clip;background:var(--rice);color:var(--forest);font-family:var(--font-zh);font-size:var(--t-body);line-height:1.8;letter-spacing:.05em;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
@@ -234,11 +239,13 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .copy{font-family:var(--font-zh);background:transparent;border:1px solid rgba(253,251,246,.4);color:var(--rice);border-radius:var(--radius-tag);padding:4px 12px;font-size:12.5px;letter-spacing:.1em;cursor:pointer}
 .copy:hover{background:rgba(253,251,246,.12)}
 .contact .lineart{stroke:var(--apricot);opacity:.5}
+@media (max-width:860px){.contact .lineart{display:none}}
 .foot{margin-top:clamp(56px,7vw,88px);padding-top:24px;border-top:1px solid rgba(253,251,246,.18);display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;font-size:13px;letter-spacing:.08em;color:rgba(253,251,246,.65)}
 .foot a{text-decoration:none}
 .foot a:hover{color:var(--rice)}
 </style>
-
+</head>
+<body>
 <!-- shared SVG shapes -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
@@ -545,3 +552,5 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
   });
 })();
 </script>
+</body>
+</html>
